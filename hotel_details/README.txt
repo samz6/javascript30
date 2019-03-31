@@ -1,4 +1,4 @@
-Hilton UI Assessment
+UI Assessment
 
 This is typically given to candidates for the Hilton UI team.  The UI team is responsible for working with designers, user experience architects, and web accessibility specialists to develop front-end assets.  For this reason, fidelity to design, business rules, and awareness of accessible principles are part of the evaluation.  Communication is a key, so please also include a document of assumptions, compromises, or any explanation you'd like to give.
 
