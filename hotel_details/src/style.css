@@ -1,28 +1,24 @@
 body {
-  margin: 0px;
+  height: 100%;
+  margin: 0;
+  background: url("../test1_assets/background.png") repeat-y;
+  background-size: cover;
   font-family: sans-serif;
-  display: flex;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
+header {
   align-items: center;
-  background-color: #151414;
-  box-shadow: 0px 1px #4e4949;
-}
-
-nav .details {
-  color: white;
-  text-decoration: none;
-  font-size: 170%;
-  font-weight: 600;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: black;
+  display: flex;
+  flex: auto;
+  flex-shrink: 0;
+  height: 12vmin;
+  max-height: 10vmin;
+  justify-content: space-between;
   text-align: center;
 }
 
-nav .backBtn {
+header .backBtn {
   background-image: linear-gradient(#272525, black);
   color: white;
   width: 100%;
@@ -34,20 +30,18 @@ nav .backBtn {
   box-shadow: 0px 0px 2px 1px #382e2e;
 }
 
-nav .logo {
-  margin-right: 10px;
+img {
+  height: 100%;
+  width: 15vmin;
 }
 
-.container {
-  background-image: url("../test1_assets/background.png");
-  background-size: cover;
-  position: absolute;
-  height: 120%;
-  width: 100%;
-  max-height: 1000px;
-  max-width: 700px;
-  align-content: center;
+.details {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
+
 .imageBox img {
   text-align: center;
   background-color: white;
@@ -56,6 +50,12 @@ nav .logo {
   margin: auto;
   padding: 4px;
   box-shadow: 0px 0px 20px 1px black;
+}
+
+.imageBox {
+  margin-top: 5%;
+  margin-bottom: 6%;
+  text-align: center;
 }
 
 @media screen and (max-width: 450px) {
@@ -75,6 +75,10 @@ nav .logo {
   }
   .textBox {
     height: 10%;
+  }
+
+  .details {
+    font-size: 20px;
   }
 }
 
@@ -97,6 +101,10 @@ nav .logo {
   .textBox {
     height: 15%;
   }
+
+  .details {
+    font-size: 40px;
+  }
 }
 
 .textBox a {
@@ -105,19 +113,13 @@ nav .logo {
   color: white;
 }
 
-.imageBox {
-  margin-top: 5%;
-  margin-bottom: 6%;
-  text-align: center;
-}
-
 .textBox {
   border: none;
   width: 80%;
   color: white;
   position: relative;
   margin: auto;
-  margin-bottom: -5%;
+  margin-bottom: 5%;
 }
 
 .selectBox {
@@ -171,7 +173,12 @@ nav .logo {
 }
 
 footer {
-  position: fixed;
+  flex: auto;
+  color: white;
+  text-align: center;
+  margin-top: 2vmin;
+  max-height: 5vmin;
+  text-align: center;
 }
 
 footer .copyRights {
